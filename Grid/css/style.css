@@ -1,0 +1,48 @@
+.body{
+    margin: 0;
+}
+.grid{
+    display: grid;
+    /*-- grid-template: 40% 50% 50px / 100px 50% 200px; row/columns
+    el cual debido a los valores que se les ha asignado estos se 
+    desbordaran del limite del contenedor--*/
+    /* para evitar el desboradmiento se puede usar el valor de unidad 
+    fr para que este solomante tome espacios en fracción del contenedor
+    padre*/
+    /*  grid-template: 1fr 1fr 1fr / 3fr 50% 1fr;  */
+    grid-template: repeat(3, 1fr)/ 3fr minmax(50px, 300px) 1fr;
+    /* La función de repetición duplicará las especificaciones para
+    filas o columnas un número determinado de veces. En el ejemplo 
+    anterior, el uso de la función de repetición hará que la 
+    cuadrícula tenga tres filas de 133.33 píxeles de ancho cada una.
+    En este ejemplo, la primera y la tercera columna tendrán
+     3fr de ancho y 1 fr, sin importar el tamaño de la cuadrícula. 
+     Sin embargo, la segunda columna variará en tamaño a medida que 
+     cambie el tamaño de la cuadrícula general. La segunda columna 
+     siempre tendrá entre 50 y 300 píxeles de ancho.  */
+    border: 1px solid blue;
+    margin: 10px;
+    height: 500px;
+    /* Brecha de cuadrícula */
+    /* En todas nuestras cuadrículas hasta ahora, no ha habido 
+    ningún espacio entre los elementos de nuestra cuadrícula. 
+    Las propiedades CSS row-gapy column-gappondrán un espacio en 
+    blanco entre cada fila y columna en la cuadrícula. */
+    /* Finalmente, hay una propiedad CSS abreviada, gap, que puede
+    establecer el espacio entre filas y columnas al mismo tiempo. */
+    /* row-gap: 20px; */
+    /* column-gap:5px; */
+     gap:20px 5px;
+     /* El ejemplo anterior establecerá la distancia entre filas en 
+     20 píxeles y la distancia entre columnas en 5 píxeles. A 
+     diferencia de otras propiedades de cuadrícula CSS, 
+     ¡esta abreviatura no toma /valores intermedios! Si solo se 
+     proporciona un valor, establecerá el espacio entre columnas
+     y entre filas en ese valor. */
+}
+.box{
+    background-color: beige;
+    color: black;
+    border: 2px solid dodgerblue;
+    border-radius: 5px;
+}
