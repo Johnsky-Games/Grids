@@ -4,27 +4,27 @@ En este punto, hemos cubierto una gran cantidad de formas
 diferentes de manipular la cuadrícula y los elementos dentro 
 de ella para crear diseños interesantes.
 
-grid-template-columns define el número y tamaño de las columnas 
-de la grilla
+- grid-template-columns: define el número y tamaño de las columnas 
+de la grilla.
 
-grid-template-rows define el número y el tamaño de las filas de 
-la cuadrícula
+- grid-template-rows: define el número y el tamaño de las filas de 
+la cuadrícula.
 
-grid-template es una abreviatura para definir ambos 
-grid-template-columnsy grid-template-rowsen una línea
+- grid-template: es una abreviatura para definir ambos. 
+- grid-template-columns y grid-template-rowsen una línea.
 
-row-gap pone un espacio en blanco entre las filas de la cuadrícula
-column-gap pone un espacio en blanco entre las columnas de la 
-cuadrícula
+- row-gap   : pone un espacio en blanco entre las filas de la cuadrícula.
+- column-gap: pone un espacio en blanco entre las columnas de la 
+  cuadrícula.
 
-gap es una abreviatura para definir ambos row-gapy column-gapen una 
-línea
+- gap: es una abreviatura para definir ambos row-gapy column-gapen una 
+  línea.
 
-grid-row-start y grid-row-end hace que los elementos abarquen 
-ciertas filas de la cuadrícula
+- grid-row-start y grid-row-end: hace que los elementos abarquen 
+  ciertas filas de la cuadrícula.
 
-grid-column-start y grid-column-end hace que los elementos abarquen 
-ciertas columnas de la cuadrícula
+- grid-column-start y grid-column-end: hace que los elementos abarquen 
+  ciertas columnas de la cuadrícula.
 
-grid-area es una abreviatura de grid-row-start, grid-column-start, 
-grid-row-endy grid-column-end, todo en una línea
+- grid-area: es una abreviatura de grid-row-start, grid-column-start, 
+  grid-row-endy grid-column-end, todo en una línea.
