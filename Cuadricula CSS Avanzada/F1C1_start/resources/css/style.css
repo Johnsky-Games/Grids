@@ -18,8 +18,6 @@ html {
   border-radius: 4px;
   background-color: #4a4a4a;
   color: white;
-  width: 408px;
-  height: 64px;
 }
 
 .image-container {
@@ -32,7 +30,7 @@ html {
 
 @media only screen and (max-width: 760px) {
   .main-content {
-  top: 2.5625rem;
+    top: 2.5625rem;
   }
 }
 
@@ -55,10 +53,14 @@ header .content {
 header .logo {
   flex: 1;
   margin-left: 30px;
+  color: #4a4a4a;
+  font-size: 24px;
+  font-family: 'Roboto-Mono-Regular', monospace;
 }
 
 header nav ul {
   display: flex;
+  margin-right: 30px;
 }
 
 nav li {
@@ -70,14 +72,12 @@ nav a {
   line-height: 1.6;
   font-size: 1rem;
   color: #4a4a4a;
-  font-size: 16px;
-  font-family: 'Roboto-Regular';
+  font-family: 'Roboto-Regular', sans-serif;
 }
 
 header .icon {
   width: 1rem;
   padding-left: .75rem;
-  margin-right: 30px;
 }
 
 header .mobile {
@@ -118,23 +118,23 @@ header .mobile {
 }
 
 /* Sign Up Section */
-.banner {
-  background-image: url('/Cuadricula CSS Avanzada/F1C1_start/resources/images/banner-landingpage.jpg');
-}
 
 #sign-up-section {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  height: 43.5rem;
+  height: auto;
+  background-image: url('/Cuadricula CSS Avanzada/F1C1_start/resources/images/banner-landingpage.jpg');
+  background-size: cover;
 }
 
 #sign-up-cta {
   padding: 0 5rem 2.5rem 5rem;
   border: solid 1px #979797;
   border-radius: 4px;
-  background-color: #9dc20a;
-  margin: 170px 0 170px 100px;
+  background-color: #9dc20b;
+  margin: 170px 0;
+  margin-left: 100px;
 }
 
 #sign-up-cta .content {
@@ -147,16 +147,10 @@ header .mobile {
   margin: 32px 80px 56px 80px;
 }
 
-.email { 
-  color: white;
-  font-size: 20px;
-  font-family: 'Roboto-Regular';
-  line-height: 1.4;
-  margin: 12px 0 26px 0;
-}
-
 #sign-up-cta h1 {
-  font-size: 3.125rem;
+  font-size: 50px;
+  color: white;
+  line-height: 1.4;
 }
 
 #sign-up-cta h2 {
@@ -165,6 +159,12 @@ header .mobile {
 
 #sign-up-cta span strong {
   font-weight: bold;
+  margin-top: 12px;
+  margin-bottom: 26px;
+  color: white;
+  font-size: 20px;
+  font-family: 'Roboto-Regular', sans-serif;
+  line-height: 1.4;
 }
 
 #sign-up-cta .cursive {
@@ -172,16 +172,24 @@ header .mobile {
 }
 
 #sign-up-cta .striking {
-  font-family: 'Rubik-Regular', sans-serif;
+  font-family: "Rubik-Regular", sans-serif;
   padding-bottom: .75rem;
-  font-size: 50px;
-  color: white;
-  line-height: 1.4;
 }
 
 #sign-up-cta .button {
+  display: grid;
   margin-top: 1.625rem;
   padding: 1.25rem 7.25rem;
+  color: white;
+  border-radius: 4px;
+  background-color: #4a4a4a;
+  max-width: 408px;
+  height: 64px;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-family: 'Roboto-Medium', sans-serif;
+  line-height: 1.4;
 }
 
 @media only screen and (max-width: 760px) {
@@ -237,6 +245,8 @@ header .mobile {
   justify-content: space-between;
   padding: 4rem 5%;
   background-color: #f3f3f3;
+  min-height: 635px;
+  background-size: cover;
 }
 
 .feature {
@@ -244,19 +254,27 @@ header .mobile {
   padding: 2rem;
   margin: 0px 1.25rem;
   background-color: white;
+  margin: 64px 0 46px 0;
+  margin: 0 38px;
 }
 
 .feature .image-container {
   width: 90%;
   height: 65%;
-  margin: 0 auto;
+  margin: 32px 32px 40px 32px;
+}
+
+.feature .content {
+  height: 187px;
 }
 
 .feature h2 {
   padding-bottom: .5rem;
+  font-family: 'Roboto-Bold', sans-serif;
   font-size: 2.25rem;
   font-weight: bold;
   color: #4a4a4a;
+  line-height: 1.2;
 }
 
 .feature h3 {
@@ -264,6 +282,7 @@ header .mobile {
   line-height: 1.2;
   font-weight: 300;
   color: #4a4a4a;
+  font-family: 'Roboto-light';
 }
 
 @media only screen and (max-width: 890px) {
